@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="RCL\**" />
+    <Content Remove="RCL\**" />
+    <EmbeddedResource Remove="RCL\**" />
+    <None Remove="RCL\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="RCL\RCL.csproj" />
+  </ItemGroup>
+
+</Project>
